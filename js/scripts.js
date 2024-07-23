@@ -45,9 +45,7 @@ $(document).ready(function() {
 
 $(window).on("load", function(){
 	
-	/* sliders */
-
-	$(".owl-carousel").owlCarousel({
+	const owlCarouselOptions = {
 		items: 1,
 		loop: true,
 		autoHeight: true,
@@ -57,7 +55,25 @@ $(window).on("load", function(){
 		dots: false,
 		nav: true,
 		navText: ""
-	});
+	  };
+
+	  $(".owl-carousel").each(function() {
+		$(this).owlCarousel(owlCarouselOptions); 
+	  });
+
+	/* sliders */
+
+	// $(".owl-carousel").owlCarousel({
+	// 	items: 1,
+	// 	loop: true,
+	// 	autoHeight: true,
+	// 	smartSpeed: 300,
+	// 	mouseDrag: false,
+	// 	pullDrag: false,
+	// 	dots: false,
+	// 	nav: true,
+	// 	navText: ""
+	// });
 	
 });
 
