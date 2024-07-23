@@ -25,7 +25,7 @@ span {
 footer,
 header,
 section {
-    display: flex
+    display: block
 }
 
 img {
