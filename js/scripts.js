@@ -19,9 +19,7 @@ $(document).ready(function() {
 
 	function update() {
 		var Now = new Date(), Finish = new Date();
-		Finish.setHours( 23);
-		Finish.setMinutes( 59);
-		Finish.setSeconds( 59);
+		Finish.setHours( 23, 59, 59);
 		if( Now.getHours() === 23  &&  Now.getMinutes() === 59  &&  Now.getSeconds === 59) {
 			Finish.setDate( Finish.getDate() + 1);
 		}
