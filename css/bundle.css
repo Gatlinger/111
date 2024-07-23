@@ -608,7 +608,7 @@ section .image {
 }
 
 .offer_section .info_block img {
-    display: block
+    display: flex
 }
 
 .offer_section .info_block .subtitle {
