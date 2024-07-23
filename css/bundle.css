@@ -516,7 +516,6 @@ section .image {
     background-image: url(../img/mainbg.png);
     -webkit-background-size: cover;
     background-size: cover;
-    position: relative
 }
 
 .scroller-wrapper {
